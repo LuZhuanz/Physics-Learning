@@ -1,0 +1,17 @@
+\documentclass[12pt, a4paper, oneside]{ctexart}
+\usepackage{amsmath, amsthm, amssymb, appendix, bm, graphicx, hyperref, mathrsfs,hep,color}
+\begin{document}
+\textcolor{blue}{Page.16-Exercise}\\
+式${{\partial }_{\lambda }}{{F}_{\mu \nu }}+{{\partial }_{\mu }}{{F}_{\nu \lambda }}+{{\partial }_{\nu }}{{F}_{\lambda \mu }}$中$\lambda,\mu,\nu$可能的取值有$\left( 0,i,j \right),\left( i,j,k \right)$两种类型(i,j,k是空间坐标，因此前一种类型包含电场分量，后一种只有磁场分量)；
+前一种类型有三种不同取法，以$i=1,j=2$为例
+\[{{\partial }_{0}}{{F}_{12}}+{{\partial }_{1}}{{F}_{20}}+{{\partial }_{2}}{{F}_{01}}=-{{\partial }_{0}}{{B}_{3}}-{{\partial }_{1}}{{E}_{2}}+{{\partial }_{2}}{{E}_{1}}\]
+同理写出其余两个式子可以看出前一种类型正好对应$-\left( {{\partial }_{0}}\mathbf{B}+\nabla \times \mathbf{E} \right)$的三个分量；
+而后一种类型：
+\[{{\partial }_{1}}{{F}_{23}}+{{\partial }_{2}}{{F}_{31}}+{{\partial }_{3}}{{F}_{12}}=-\left( {{\partial }_{1}}{{B}_{1}}+{{\partial }_{2}}{{B}_{2}}+{{\partial }_{3}}{{B}_{3}} \right)=-\nabla \cdot \mathbf{B}\]
+现在利用$F_{\mu\nu}$定义证明这些式子均为0
+\[\begin{aligned}
+        {{\partial }_{\lambda }}{{F}_{\mu \nu }}+{{\partial }_{\mu }}{{F}_{\nu \lambda }}+{{\partial }_{\nu }}{{F}_{\lambda \mu }} & ={{\partial }_{\lambda }}\left( {{\partial }_{\mu }}{{A}_{\nu }}-{{\partial }_{\nu }}{{A}_{\mu }} \right)+{{\partial }_{\mu }}\left( {{\partial }_{\nu }}{{A}_{\lambda }}-{{\partial }_{\lambda }}{{A}_{\nu }} \right)+{{\partial }_{\nu }}\left( {{\partial }_{\lambda }}{{A}_{\mu }}-{{\partial }_{\mu }}{{A}_{\lambda }} \right) \\
+                                                                                                                                   & =0                                                                                                                                                                                                                                                                                                                                  \\
+    \end{aligned}\]
+
+\end{document}

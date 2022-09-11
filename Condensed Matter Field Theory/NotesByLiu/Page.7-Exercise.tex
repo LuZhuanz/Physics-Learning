@@ -1,0 +1,19 @@
+\documentclass[12pt, a4paper, oneside]{ctexart}
+\usepackage{amsmath, amsthm, amssymb, appendix, bm, graphicx, hyperref, mathrsfs,hep,color}
+\begin{document}
+\textcolor{blue}{Page.7-Exercise}
+\[\begin{aligned}
+         & S\left[ x+\varepsilon y \right]-S\left[ x \right]=\int{dt\text{ }L\left( x+\varepsilon y,\dot{x}+\varepsilon \dot{y} \right)-L\left( x,\dot{x} \right)}                                                                                       \\
+         & L\left( x+\varepsilon y,\dot{x}+\varepsilon \dot{y} \right)-L\left( x,\dot{x} \right)=\varepsilon \left( \frac{\partial L}{\partial x}y+\frac{\partial L}{\partial \dot{x}}\dot{y} \right)                                                    \\
+         & \underset{\varepsilon \to 0}{\mathop{\lim }}\,\frac{1}{\varepsilon }\left( S\left[ x+\varepsilon y \right]-S\left[ x \right] \right)=\int{dt\text{ }\left( \frac{\partial L}{\partial x}y+\frac{\partial L}{\partial \dot{x}}\dot{y} \right)} \\
+    \end{aligned}\]
+其中
+\[\begin{aligned}
+        \int{dt\frac{\partial L}{\partial \dot{x}}\dot{y}} & ={{\left. \left( \frac{\partial L}{\partial \dot{x}}y \right) \right|}_{\partial }}-\int{dt\text{ }\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{x}} \right)y} \\
+                                                           & =-\int{dt\text{ }\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{x}} \right)y}                                                                                   \\
+    \end{aligned}\]
+\[\underset{\varepsilon \to 0}{\mathop{\lim }}\,\frac{1}{\varepsilon }\left( S\left[ x+\varepsilon y \right]-S\left[ x \right] \right)=\int{dt\text{ }\left( \frac{\partial L}{\partial x}-\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{x}} \right) \right)y}=0\]
+由于函数$y\left(t\right)$的任意性：
+\[\frac{\partial L}{\partial x}-\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{x}} \right)=0\]
+
+\end{document}

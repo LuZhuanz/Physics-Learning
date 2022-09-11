@@ -1,0 +1,20 @@
+\documentclass[12pt, a4paper, oneside]{ctexart}
+\usepackage{amsmath, amsthm, amssymb, appendix, bm, graphicx, hyperref, mathrsfs,hep,color}
+\begin{document}
+\textcolor{blue}{Page.5-Note}\\
+一维谐振子链的Lagrangian为
+\[\begin{aligned}
+        L & =\sum\limits_{I=1}^{N}{\left[ \frac{M}{2}\dot{\phi }_{I}^{2}-\frac{{{k}_{s}}}{2}{{\left( {{\phi }_{I+1}}-{{\phi }_{I}} \right)}^{2}} \right]}    \\
+          & =\sum\limits_{I=1}^{N}{\left[ \frac{M}{2a}\dot{\phi }_{I}^{2}-\frac{{{k}_{s}}}{2a}{{\left( {{\phi }_{I+1}}-{{\phi }_{I}} \right)}^{2}} \right]}a \\
+    \end{aligned}\]
+积分的数学定义为$\int{f\left( x \right)dx}=\underset{\left\{ \Delta {{x}_{i}} \right\}\to 0}{\mathop{\lim }}\,\sum{f\left( {{x}_{i}} \right)}\Delta {{x}_{i}}$，所以当$a$足够小，
+$\sum\limits_{I=1}^{N}{a}\to \int_{0}^{L}{dx}$的替换是数学的要求.但文中${{\phi }_{I}}\to {{a}^{1/2}}{{\left. \phi \left( x \right) \right|}_{x=Ia}}$是人为的约定，比如
+\[{{\phi }_{I}}\to {{\left. \phi \left( x \right) \right|}_{x=Ia}},\frac{{{\phi }_{I+1}}-{{\phi }_{I}}}{a}\to {{\left. {{\partial }_{x}}\phi \left( x \right) \right|}_{x=Ia}}\]
+可以作为另一种选择.此时
+\[\begin{aligned}
+        L & =\sum\limits_{I=1}^{N}{\left[ \frac{M}{2a}\dot{\phi }_{I}^{2}-\frac{{{k}_{s}}a}{2}{{\left( \frac{{{\phi }_{I+1}}-{{\phi }_{I}}}{a} \right)}^{2}} \right]}a \\
+          & \to \int_{0}^{L}{dx\text{ }\left( \frac{\rho }{2}{{{\dot{\phi }}}^{2}}-\frac{\kappa }{2}{{\left( {{\partial }_{x}}\phi  \right)}^{2}} \right)}             \\
+    \end{aligned}\]
+其中$\rho =\frac{M}{a},\kappa ={{k}_{s}}a$类似于线质量密度和杨氏模量，可以直接通过实验测量，这种描述可能会更受实验物理学工作者欢迎.
+
+\end{document}
